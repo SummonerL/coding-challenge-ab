@@ -30,7 +30,11 @@ body a {
 
 @media (min-width: 760px) {
   #primary-nav .nav__item {
-    padding: 1em;
+    padding: .8em;
+    font-size: 17px;
+  }
+  #primary-nav .nav__item.nav__item-active {
+    background-color: #17445c;
   }
 }
 
@@ -74,6 +78,7 @@ body a {
   #primary-nav {
     display: inline-block;
     float: right;
+    margin: 10px;
   }
 }
 

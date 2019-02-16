@@ -15,7 +15,11 @@
         }
 
         @include desktop {
-            padding: 1em;
+            padding: .8em;
+            font-size: font-size(medium);
+            &.nav__item-active {
+                background-color: darken(color(blue), 25%);
+            }
         }
     }
 
@@ -55,6 +59,7 @@
     @include desktop {
         display: inline-block;
         float: right;
+        margin: 10px;
     }
 }
 
