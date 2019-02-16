@@ -1,0 +1,77 @@
+#page-header {
+    background-color: color(blue);
+}
+
+#primary-nav {
+    .nav__item {
+        a {
+            color: color(white);
+        }
+
+        i {
+            position: absolute;
+            right: .4em;
+            top: 4.5em;
+        }
+
+        @include desktop {
+            padding: 1em;
+        }
+    }
+
+    .nav__items-desktop {
+        display: none;
+
+        @include desktop {
+            display:block;
+        }
+    }
+
+    .nav__items-mobile {
+        display: block;
+
+        @include desktop {
+            display:none;
+        }
+    }
+
+    @include mobile {
+        &.nav__items-open .nav__items-desktop {
+            float: none;
+            display: block;
+            text-align: left;
+
+            a {
+                float: none;
+                display: block;
+                text-align: left;
+                background-color: darken(color(blue), 25%);
+                font-size: font-size(medium);
+                padding: .3em;
+            }
+        }
+    }
+
+    @include desktop {
+        display: inline-block;
+        float: right;
+    }
+}
+
+#page-logo {
+    background-image: url('../images/urbank@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 74px;
+    padding: 1.2em .5em;
+
+    @include desktop {
+        background-image: url('../images/urbank.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 37px;
+        width: 152px;
+        padding: .1em 3em;
+        display: inline-block;
+    }
+}

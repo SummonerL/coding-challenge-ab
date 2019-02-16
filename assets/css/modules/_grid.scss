@@ -1,0 +1,8 @@
+$col-width: (
+    left: 70%,
+    right: 30%
+);
+
+@function col-width($col) {
+    @return map-get($col-width, $col);
+}

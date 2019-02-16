@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+$fonts: (
+    primary: Roboto,
+);
+
+$font-weight: (
+    thin: 300,
+    regular: 400,
+    bold: 700
+);
+
+$font-size: (
+    small: 15px,
+    medium: 17px,
+    large: 24px,
+    ex-large: 30px
+);
+
+@function font($font) {
+    @return map-get($fonts, $font);
+}
+
+@function font-size($size) {
+    @return map-get($font-size, $size);
+}
+
+@function font-weight($weight) {
+    @return map-get($font-weight, $weight);
+}

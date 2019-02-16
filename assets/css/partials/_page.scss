@@ -1,0 +1,14 @@
+body {
+    background-color: color(white);
+    height: 100vh;
+    margin: 0;
+    display: block;
+    font-family: font(primary);
+    font-weight: font-weight(regular);
+    font-size: font-size(small);
+
+    a {
+        color: color(blue);
+        text-decoration: none;
+    }
+}
