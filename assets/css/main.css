@@ -114,6 +114,40 @@ body a {
   }
 }
 
+.lighter {
+  color: #5c5c5c;
+}
+
+.darker {
+  color: #000000;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th {
+  font-weight: 400;
+}
+
+.table th, .table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table tbody tr:nth-child(1) {
+  font-weight: 700;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #dbebe0;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #cbe1d2;
+}
+
 #page-header {
   background-color: #318fc2;
 }
@@ -271,6 +305,22 @@ body a {
     right: 2em;
     bottom: 1em;
   }
+}
+
+#related-content {
+  padding: 20px 10%;
+  max-width: 800px;
+}
+
+#related-content .content__header {
+  font-size: 30px;
+  font-weight: 400;
+  color: #640360;
+}
+
+.section__header {
+  font-weight: 400;
+  margin: 35px 0;
 }
 
 #page-footer {

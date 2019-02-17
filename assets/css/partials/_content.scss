@@ -67,5 +67,17 @@
 }
 
 #related-content {
+    padding: 20px 10%;
+    max-width: 800px;
 
+    .content__header {
+        font-size: font-size(ex-large);
+        font-weight: font-weight(regular);
+        color: color(purple);
+    }
+}
+
+.section__header {
+    font-weight: font-weight(regular);
+    margin: 35px 0;
 }

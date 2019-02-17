@@ -107,3 +107,29 @@ body {
         text-align: center;
     }
 }
+
+.lighter {
+    color: darken(color(grey), 60%);
+}
+
+.darker {
+    color: color(black);
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+
+    th {
+        font-weight: font-weight(regular);
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tbody tr:nth-child(1) { font-weight: font-weight(bold);}
+    tbody tr:nth-child(odd){background-color: lighten(color(green), 10%);}
+    tbody tr:nth-child(even){background-color: lighten(color(green), 5%);}
+}
