@@ -2,9 +2,7 @@
 $(document).ready(function() {
     var rates = [];
     $.getJSON( "https://raw.githubusercontent.com/allylabs/fed-coding-challenge/public/code-test.json", function( json ) {
-        rates = rates.concat(json);
-
-        constructTable(rates);
+        constructTable(rates.concat(json));
     });
 });
 
