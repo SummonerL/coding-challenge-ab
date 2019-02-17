@@ -1,3 +1,27 @@
 #page-footer {
     background-color: color(grey);
+    height: 100px;
+    width: 100%;
+    font-size: font-size(medium);
+
+    .footer-copyright {
+        display:inline-block;
+        padding: .5em 3em 0 3em;
+    }
+
+    .footer-links {
+        display:inline-block;
+        float: right;
+        padding: .5em 3em 0 3em;
+
+        span {
+            padding: 0px .5em;
+        }
+    }
+}
+
+.footer__link {
+    &.footer__link-active {
+        font-weight: font-weight(bold);
+    }
 }

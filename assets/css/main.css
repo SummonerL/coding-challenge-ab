@@ -15,6 +15,10 @@ body a {
   text-decoration: none;
 }
 
+#main-content {
+  min-height: calc(100vh - 200px);
+}
+
 .btn {
   width: 100%;
   max-width: 200px;
@@ -280,8 +284,14 @@ body a {
 }
 
 #login-section {
-  padding: 20px 10%;
+  padding: 10px 10%;
   text-align: center;
+}
+
+@media (min-width: 761px) {
+  #login-section {
+    text-align: right;
+  }
 }
 
 #main-content {
@@ -315,7 +325,7 @@ body a {
   #main-content {
     display: inline-block;
     max-width: 60em;
-    padding: 20px 3em 20px 10em;
+    padding: 0px 3em 20px 10em;
   }
 }
 
@@ -382,5 +392,27 @@ body a {
 
 #page-footer {
   background-color: #f5f5f5;
+  height: 100px;
+  width: 100%;
+  font-size: 17px;
+}
+
+#page-footer .footer-copyright {
+  display: inline-block;
+  padding: .5em 3em 0 3em;
+}
+
+#page-footer .footer-links {
+  display: inline-block;
+  float: right;
+  padding: .5em 3em 0 3em;
+}
+
+#page-footer .footer-links span {
+  padding: 0px .5em;
+}
+
+.footer__link.footer__link-active {
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
