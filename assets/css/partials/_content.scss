@@ -4,8 +4,7 @@
 }
 
 #main-content {
-    padding: 20px 10%;
-    max-width: 800px;
+    padding: 20px 3em;
 
     .content__header {
         font-size: font-size(ex-large);
@@ -28,6 +27,12 @@
 
     .content__subheader {
         font-size: font-size(medium);
+    }
+
+    @include desktop {
+        display: inline-block;
+        max-width: 60em;
+        padding: 20px 3em 20px 10em;
     }
 }
 
@@ -67,13 +72,16 @@
 }
 
 #related-content {
-    padding: 20px 10%;
-    max-width: 800px;
+    padding: 20px 1em;
+    width: 100%;
+    max-width: 20em;
 
-    .content__header {
-        font-size: font-size(ex-large);
-        font-weight: font-weight(regular);
-        color: color(purple);
+    @include desktop {
+        display: inline-block;
+    }
+
+    @include mobile {
+        margin: auto;
     }
 }
 

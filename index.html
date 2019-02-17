@@ -110,7 +110,7 @@
                     <tr>
                         <th>&nbsp;</th>
                         <th><small>Annual Percentage Yield</small></th>
-                        <th><small>Est. Earnings for 1 year</small></th>
+                        <th><small>Est. Earnings for 1 year*</small></th>
                     </tr>
                 </thead>
                 <tbody >
@@ -125,13 +125,20 @@
                 </tfoot>
             </table>
         </section>
-    </main>
 
-    <aside id="related-content">
-        <section>
-                <div></div>
-
-                <div class="tab__content">
+        <section id="related-content">
+                <div class="tab__controls">
+                    <span id="news-tab" class="tab__control tab__control-active" onclick="changeTab('archive', 'news');">
+                        News
+                    </span>
+                    <span id="archive-tab" class="tab__control" onclick="changeTab('news', 'archive');">
+                        Archive
+                    </span>
+                    <span class="tab__control tab__control-spacer">
+                            &nbsp;
+                    </span>
+                </div>
+                <div id="news" class="tab__content tab__content-active">
                     <article>
                         <h4><a href="#">Lorem ipsum dolor</a></h4>
                         <p>
@@ -153,7 +160,16 @@
                     </article>
                 </div>
 
-                <div class="tab__content">
+                <div id="archive" class="tab__content">
+                    <article>
+                            <h4><a href="#">Lorem ipsum dolor</a></h4>
+                    </article>
+                    <article>
+                            <h4><a href="#">Lorem ipsum dolor</a></h4>
+                    </article>
+                    <article>
+                            <h4><a href="#">Lorem ipsum dolor</a></h4>
+                    </article>
                     <article>
                             <h4><a href="#">Lorem ipsum dolor</a></h4>
                     </article>
@@ -174,7 +190,9 @@
                     </article>
                 </div>
         </section>
-    </aside>
+    </main>
+
+
 
     <footer id="page-footer">
         <a href="#">&copy; 2014 URBank</a>

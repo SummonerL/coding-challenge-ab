@@ -50,7 +50,7 @@ body {
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 10px 2em;
+    padding: 20px 2em;
     width: 80%;
     max-width: 500px;
     -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -132,4 +132,49 @@ body {
     tbody tr:nth-child(1) { font-weight: font-weight(bold);}
     tbody tr:nth-child(odd){background-color: lighten(color(green), 10%);}
     tbody tr:nth-child(even){background-color: lighten(color(green), 5%);}
+}
+
+.tab__content {
+    display: none;
+    padding: 20px 1em;
+    max-width: 250px;
+    height: 350px;
+    background: color(grey);
+    border-left: 1px solid darken(color(grey), 20%);
+    border-right: 1px solid darken(color(grey), 20%);
+    border-bottom: 1px solid darken(color(grey), 20%);
+
+    &.tab__content-active {
+        display: block;
+    }
+}
+
+.tab__controls {
+    .tab__control {
+        background-color: color(green);
+        font-size: font-size(medium);
+        color: color(blue);
+        padding: .8em 1em 0 1em;
+        border-top: 1px solid darken(color(grey), 20%);
+        border-right: 1px solid darken(color(grey), 20%);
+        border-bottom: 1px solid darken(color(grey), 20%);
+        border-left: 1px solid darken(color(grey), 20%);
+        cursor: pointer;
+
+        &.tab__control-active {
+            padding: 1em 1em 0 1em;
+            background-color: color(grey);
+            color: darken(color(grey), 60%);
+            border-bottom: 0px;
+        }
+
+        &.tab__control-spacer {
+            padding: 0 2.9em;
+            background-color: color(white);
+            border-top: 0px;
+            border-right: 0px;
+            border-bottom: 1px solid darken(color(grey), 20%);
+            border-left: 0px;
+        }
+    }
 }

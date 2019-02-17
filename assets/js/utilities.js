@@ -16,6 +16,14 @@ function toggleModal(modalName) {
     $('#'+modalName).toggleClass('modal-open');
 }
 
+function changeTab(oldTab, newTab) {
+    $('#'+oldTab).removeClass('tab__content-active');
+    $('#'+newTab).addClass('tab__content-active')
+
+    $('#'+oldTab+'-tab').removeClass('tab__control-active');
+    $('#'+newTab+'-tab').addClass('tab__control-active');
+}
+
 function constructTable(rates) {
     // sort rates by earnings
     rates = rates.sort(function(rate1, rate2) {return rate2.earnings - rate1.earnings})

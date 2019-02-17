@@ -52,7 +52,7 @@ body a {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 10px 2em;
+  padding: 20px 2em;
   width: 80%;
   max-width: 500px;
   -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -146,6 +146,49 @@ body a {
 
 .table tbody tr:nth-child(even) {
   background-color: #cbe1d2;
+}
+
+.tab__content {
+  display: none;
+  padding: 20px 1em;
+  max-width: 250px;
+  height: 350px;
+  background: #f5f5f5;
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+}
+
+.tab__content.tab__content-active {
+  display: block;
+}
+
+.tab__controls .tab__control {
+  background-color: #bbd8c4;
+  font-size: 17px;
+  color: #318fc2;
+  padding: .8em 1em 0 1em;
+  border-top: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  border-left: 1px solid #c2c2c2;
+  cursor: pointer;
+}
+
+.tab__controls .tab__control.tab__control-active {
+  padding: 1em 1em 0 1em;
+  background-color: #f5f5f5;
+  color: #5c5c5c;
+  border-bottom: 0px;
+}
+
+.tab__controls .tab__control.tab__control-spacer {
+  padding: 0 2.9em;
+  background-color: #ffffff;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid #c2c2c2;
+  border-left: 0px;
 }
 
 #page-header {
@@ -242,8 +285,7 @@ body a {
 }
 
 #main-content {
-  padding: 20px 10%;
-  max-width: 800px;
+  padding: 20px 3em;
 }
 
 #main-content .content__header {
@@ -267,6 +309,14 @@ body a {
 
 #main-content .content__subheader {
   font-size: 17px;
+}
+
+@media (min-width: 761px) {
+  #main-content {
+    display: inline-block;
+    max-width: 60em;
+    padding: 20px 3em 20px 10em;
+  }
 }
 
 #mobile-info {
@@ -308,14 +358,21 @@ body a {
 }
 
 #related-content {
-  padding: 20px 10%;
-  max-width: 800px;
+  padding: 20px 1em;
+  width: 100%;
+  max-width: 20em;
 }
 
-#related-content .content__header {
-  font-size: 30px;
-  font-weight: 400;
-  color: #640360;
+@media (min-width: 761px) {
+  #related-content {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 760px) {
+  #related-content {
+    margin: auto;
+  }
 }
 
 .section__header {
