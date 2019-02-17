@@ -1,8 +1,7 @@
 // let's pull in the json on page load
 $(document).ready(function() {
-    var rates = [];
     $.getJSON( "https://raw.githubusercontent.com/allylabs/fed-coding-challenge/public/code-test.json", function( json ) {
-        constructTable(rates.concat(json));
+        constructTable(json);
     });
 });
 
