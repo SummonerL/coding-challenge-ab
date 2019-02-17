@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700");
 body {
   background-color: #ffffff;
@@ -204,6 +205,72 @@ body a {
 #login-section {
   padding: 20px 10%;
   text-align: center;
+}
+
+#main-content {
+  padding: 20px 10%;
+  max-width: 800px;
+}
+
+#main-content .content__header {
+  font-size: 30px;
+  font-weight: 400;
+  color: #640360;
+}
+
+#main-content .content__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+#main-content .content__list li:before {
+  content: "·";
+  font-size: 30px;
+  margin-right: .2em;
+  vertical-align: middle;
+  line-height: 20px;
+}
+
+#main-content .content__subheader {
+  font-size: 17px;
+}
+
+#mobile-info {
+  background-color: #bbd8c4;
+  padding: 10px 1em 10px 1em;
+  overflow-y: auto;
+}
+
+@media (min-width: 761px) {
+  #mobile-info {
+    position: relative;
+    padding: 10px 10em 10px 1em;
+    overflow-y: visible;
+  }
+}
+
+#mobile-info .content__subheader {
+  color: #640360;
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+#mobile-info .content__text {
+  display: inline;
+  margin-top: .5em;
+}
+
+#mobile-info-img {
+  float: right;
+  padding-left: .5em;
+}
+
+@media (min-width: 761px) {
+  #mobile-info-img {
+    position: absolute;
+    right: 2em;
+    bottom: 1em;
+  }
 }
 
 #page-footer {

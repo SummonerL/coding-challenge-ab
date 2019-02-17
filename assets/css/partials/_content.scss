@@ -4,7 +4,66 @@
 }
 
 #main-content {
+    padding: 20px 10%;
+    max-width: 800px;
 
+    .content__header {
+        font-size: font-size(ex-large);
+        font-weight: font-weight(regular);
+        color: color(purple);
+    }
+
+    .content__list {
+        padding-left: 0;
+        list-style-type: none;
+
+        li:before {
+            content:"·";
+            font-size:30px;
+            margin-right: .2em;
+            vertical-align:middle;
+            line-height:20px;
+        }
+    }
+
+    .content__subheader {
+        font-size: font-size(medium);
+    }
+}
+
+#mobile-info {
+    background-color: color(green);
+    padding: 10px 1em 10px 1em;
+    overflow-y: auto;
+
+
+    @include desktop {
+        position: relative;
+        padding: 10px 10em 10px 1em;
+        overflow-y: visible;
+    }
+
+    .content__subheader {
+        color: color(purple);
+        display: inline-block;
+        margin-bottom: .5em;
+    }
+
+    .content__text {
+        display: inline;
+        margin-top: .5em;
+    }
+}
+
+#mobile-info-img {
+    float: right;
+    padding-left: .5em;
+
+    @include desktop {
+        position: absolute;
+        right: 2em;
+        bottom: 1em;
+    }
 }
 
 #related-content {
